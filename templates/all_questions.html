@@ -1,0 +1,35 @@
+{% extends 'index.html' %}
+{% block all_questions %}
+    <body>
+    <table>
+        <thead>
+            <tr>
+                <td><h3>Submission Time</h3></td>
+                <td><h3>View Number</h3></td>
+                <td><h3>Vote Number</h3></td>
+                <td><h3>Title</h3></td>
+                <td><h3>Message</h3></td>
+                <td><h3>Image</h3></td>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for question in questions %}
+            <tr>
+                <td>{{ question['submission_time'] }}</td>
+                <td>{{ question['view_number'] }}</td>
+                <td>{{ question['vote_number'] }}</td>
+                <td><a href="/question/{{ question['id'] }}">{{ question['title'] }}</td>
+                <td>{{ question['message'] }}</td>
+                <td>{{ question['image'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </body>
+
+
+
+
+
+{% endblock %}

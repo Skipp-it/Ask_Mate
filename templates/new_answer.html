@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block new_answer %}
+    <body>
+    <h2>Post a new question</h2>
+    <a href={{ url_for('question', id) }} >Back to questions list</a>
+
+        <form acion="/question/{{ question_id }}/new_answer" method="POST">
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="10" cols="30" >aici</textarea><br><br>
+
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+{% endblock %}
