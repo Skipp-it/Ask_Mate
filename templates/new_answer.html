@@ -1,17 +1,20 @@
 {% extends 'index.html' %}
 {% block new_answer %}
-    <body>
-    <h2>Post a new question</h2>
-    <a href={{ url_for('question', id) }} >Back to questions list</a>
 
-        <form acion="/question/{{ question_id }}/new_answer" method="POST">
+<body>
+    <h2>Post a new answer</h2>
+    <a href="/question/{{ id }}">Back to questions</a>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="10" cols="30" >aici</textarea><br><br>
+    <form action="/question/{{ id }}/new_answer" method="POST">
 
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" placeholder="new answer" rows="10" cols="30"></textarea><br><br>
 
-            <button type="submit">Submit</button>
-        </form>
+        <label for="image">Add your image:</label><br>
+        <input type="url" id="image" name="image"><br>
 
-    </body>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
 {% endblock %}
