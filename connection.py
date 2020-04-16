@@ -36,6 +36,7 @@ def get_data(filename, data_id =None):
                 return dictionary
     return csv_dict_list
 
+
 #Update
 def update_in_csv(update_id,update_dict, filename, data_header):
     list_of_all = get_data(filename)
@@ -55,17 +56,11 @@ def delete_in_csv(delete_id, filename,data_header):
     with open(filename, 'w', newline='', encoding='utf-8') as csv_file:
         csv_writer = csv.DictWriter(csv_file, fieldnames=data_header)
         csv_writer.writeheader()
-        for i in range(len(list_of_all)):
+        for i in range(len(list_of_all)-1):
             if list_of_all[i]['id'] == delete_id:
                 del list_of_all[i]
             csv_writer.writerow(list_of_all[i])
     return "delete succesfull"
-
-
-
-def generate_id():
-    new_id = len(get_data()) + 1
-    return new_id
 
 
 

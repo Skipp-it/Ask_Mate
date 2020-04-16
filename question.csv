@@ -1,14 +1,5 @@
 id,submission_time,view_number,vote_number,title,message,image
-1,1493368154,29,7,How to make lists in Python?,"I am totally new to this, any hints?",
-2,1493068124,15,9,Wordpress loading multiple jQuery Versions,"I developed a plugin that uses the jquery booklet plugin (http://builtbywill.com/booklet/#/) this plugin binds a function to $ so I cann call $('.myBook').booklet();
-
-I could easy managing the loading order with wp_enqueue_script so first I load jquery then I load booklet so everything is fine.
-
-BUT in my theme i also using jquery via webpack so the loading order is now following:
-
-jquery
-booklet
-app.js (bundled file with webpack, including jquery)",images/image1.png
-3,1493015432,1364,57,Drawing canvas with an image picked with Cordova Camera Plugin,"I'm getting an image from device and drawing a canvas with filters using Pixi JS. It works all well using computer to get an image. But when I'm on IOS, it throws errors such as cross origin issue, or that I'm trying to use an unknown format.
-
-This is the code I'm using to draw the image (that works on web/desktop but not cordova built ios app)",
+1,1493068124,65,7,"Kim: ""Is Trump's hair real?""",I don't think so...,https://i.insider.com/5c76805a26289825851db6d3?width=1100&format=jpeg&auto=webp
+2,1493068124,26,9,Is Kim the Supreme Leader?,He is gonna be,https://ia.eferrit.com/ia/3d46f8fd56243520-1024x682.jpg
+3,1493068124,4,1,Why does North Korea excel at drawing straight lines?,Because they have a Supreme Ruler,https://media.voltron.voanews.com/Drupal/01live-166/styles/sourced/s3/reuters-pictures/2020/01/RTS2KDKB.jpg?itok=UNbx5SgD
+4,1493068124,10,0,Which western rock classics are allowed in North Korea?,”Sweet Child in a Mine” by GnR,"https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1440,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1514862936/180101-Chang-Kim-Jong-Un-hero_eqadhx"
